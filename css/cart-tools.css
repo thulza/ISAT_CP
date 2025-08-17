@@ -1,0 +1,36 @@
+/* Cart totals */
+.cart-totals {
+    margin: 1rem 0;
+    padding: 1rem;
+    background-color: #f8f9fa;
+    border-radius: 4px;
+}
+
+.totals-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.totals-table td {
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #eee;
+}
+
+.totals-table tr:last-child td {
+    border-bottom: none;
+}
+
+.totals-table tr.total {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.totals-table td:last-child {
+    text-align: right;
+}
+
+.total {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-top: 0.5rem;
+}

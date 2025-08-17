@@ -1,0 +1,87 @@
+/* Contact Page Styles */
+.container h1 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #2c3e50;
+    font-size: 2.5rem;
+}
+
+.contact-container {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    margin-top: 2rem;
+    background: white;
+    padding: 2.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contact-logo {
+    flex: 0 0 300px;
+    text-align: center;
+    padding: 1.5rem;
+}
+
+.contact-image {
+    max-width: 100%;
+    height: auto;
+    border: none;
+    box-shadow: none;
+}
+
+.contact-info {
+    flex: 1;
+}
+
+.contact-info h3 {
+    color: #2c3e50;
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #3498db;
+    display: inline-block;
+}
+
+.contact-info p {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+    color: #34495e;
+    line-height: 1.6;
+}
+
+.contact-info strong {
+    color: #2c3e50;
+    min-width: 100px;
+    display: inline-block;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .contact-container {
+        flex-direction: column;
+        text-align: center;
+        padding: 1.5rem;
+    }
+    
+    .contact-logo {
+        flex: 0 0 auto;
+        margin-bottom: 1.5rem;
+        max-width: 250px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .contact-info h3 {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .contact-info strong {
+        display: inline;
+    }
+}

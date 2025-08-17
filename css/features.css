@@ -1,0 +1,23 @@
+/* Features List */
+.features {
+    list-style: none;
+    padding-left: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+}
+
+.features li {
+    background: #f8f9fa;
+    padding: 1rem;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.features li:before {
+    content: "✓";
+    color: #2ecc71;
+    font-weight: bold;
+}

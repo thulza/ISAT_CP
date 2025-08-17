@@ -1,0 +1,108 @@
+/* Category Selector Styles */
+.category-selector {
+    margin: 0 auto 1.5rem auto;
+    padding: 0.5rem 1rem;
+    background-color: #f8f9fa;
+    border-radius: 6px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    max-width: 300px;
+}
+
+.category-selector h3 {
+    margin: 0 0 0.5rem 0;
+    color: #333;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.category-dropdown {
+    width: 100%;
+    padding: 0.5rem 0.75rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    background-color: white;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.category-dropdown:hover {
+    border-color: #007bff;
+}
+
+.category-dropdown:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25);
+}
+
+/* Products Grid */
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1rem;
+    padding: 1rem 0;
+}
+
+.product-card {
+    background: white;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 1rem;
+    text-align: center;
+    transition: transform 0.2s, box-shadow 0.2s;
+    cursor: pointer;
+}
+
+.product-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.product-card h4 {
+    margin: 0 0 0.5rem 0;
+    color: #333;
+    font-size: 1rem;
+}
+
+.product-price {
+    font-weight: bold;
+    color: #007bff;
+    margin: 0.5rem 0;
+    font-size: 1.1rem;
+}
+
+.add-to-cart-btn {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: background-color 0.2s;
+}
+
+.add-to-cart-btn:hover {
+    background-color: #218838;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .products-grid {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    }
+    
+    .product-card {
+        padding: 0.75rem;
+    }
+    
+    .product-card h4 {
+        font-size: 0.9rem;
+    }
+    
+    .add-to-cart-btn {
+        padding: 0.4rem 0.8rem;
+        font-size: 0.8rem;
+    }
+}
